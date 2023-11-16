@@ -1,6 +1,5 @@
-
-
 <h2>My Heroes</h2>
+
 <div>
   <label for="new-hero">Hero name: </label>
   <input id="new-hero" #heroName />
@@ -10,6 +9,7 @@
     Add hero
   </button>
 </div>
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
@@ -19,6 +19,3 @@
       (click)="delete(hero)">x</button>
   </li>
 </ul>
-
-
-  
